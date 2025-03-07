@@ -1,0 +1,178 @@
+/* 🌟 User Dashboard Styles - Improved with Purple & White Theme */
+.user-dashboard,
+.dashboard-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: #fdfdff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔘 Tabs */
+.tabs,
+.tab-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #5a2d82;
+    padding-bottom: 10px;
+}
+
+.tab-button,
+.btn-custom {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    margin: 5px;
+    border: 2px solid #5a2d82;
+    border-radius: 8px;
+    background-color: white;
+    color: #5a2d82;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.tab-button.active,
+.btn-selected {
+    background-color: #5a2d82;
+    color: white;
+}
+
+.tab-button:hover,
+.btn-custom:hover {
+    background-color: #5a2d82;
+    color: white;
+}
+
+/* 📦 Content Box */
+.content-box,
+.content-area {
+    background: #fbfaff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    min-height: 300px;
+    transition: transform 0.3s ease-in-out;
+    border-left: 4px solid #5a2d82;
+}
+
+.content-box:hover,
+.content-area:hover {
+    transform: translateY(-2px);
+}
+
+/* 🎨 User Details Card */
+.user-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-card img {
+    border: 3px solid #5a2d82;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+/* 🏆 Skill Item */
+.skill-item {
+    background: #e9d7f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-left: 4px solid #5a2d82;
+}
+
+/* 🎥 Buttons */
+.btn-primary,
+.btn-warning {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-warning {
+    background: #5a2d82;
+    border: none;
+    color: white;
+}
+
+.btn-warning:hover {
+    background: #462061;
+}
+
+.btn-delete {
+    background-color: #462061;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+    .tab-button,
+    .btn-custom {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .content-box,
+    .content-area {
+        padding: 20px;
+    }
+}
+/* Custom Button Style (Same as UserDashboard) */
+
+.text-purple {
+    color: #6a0dad !important;
+  }
+  .btn-outline-custom {
+    color: #6a0dad !important;
+    border: 2px solid #6a0dad !important;
+    background: transparent !important;
+    border-radius: 20px !important;
+    padding: 10px 20px !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease-in-out !important;
+    text-align: center !important;
+    display: inline-block !important;
+}
+
+.btn-outline-custom:hover {
+    background-color: #6a0dad !important;
+    color: white !important;
+    box-shadow: 4px 6px 15px rgba(106, 13, 173, 0.3) !important;
+    transform: scale(1.05) !important;
+}
+
+  .btn-primary-custom {
+    background-color: #6a0dad !important;
+    border: none !important;
+    border-radius: 20px !important;
+    padding: 10px 20px !important;
+    font-weight: bold !important;
+    color: white !important;
+    text-align: center !important;
+    transition: background 0.3s ease-in-out, transform 0.2s !important;
+    display: inline-block !important;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .btn-primary-custom:hover {
+    background-color: #4e0b8f !important;
+    transform: scale(1.05) !important;
+    box-shadow: 4px 6px 15px rgba(106, 13, 173, 0.3) !important;
+  }
+  
+  .card:hover {
+    box-shadow: 5px 8px 15px rgba(106, 13, 173, 0.2);
+  }
+  
