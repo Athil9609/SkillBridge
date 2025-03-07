@@ -99,7 +99,6 @@ const Contact = () => {
     <Container fluid className="d-flex justify-content-center align-items-center content-box">
       <Row className="w-100 justify-content-center g-4">
         
-        {/* Left Side - Complaint / Feedback Form */}
         <Col xs={12} md={6} lg={5}>
           <Card className="p-4 shadow rounded content-box">
             <h2 className="mb-4 text-center text-purple">
@@ -172,7 +171,6 @@ const Contact = () => {
           </Card>
         </Col>
 
-        {/* Right Side - Complaints & Responses */}
         <Col xs={12} md={6} lg={5}>
           <Card className="p-4 shadow rounded content-box">
             <h3 className="mb-4 text-center text-purple">Your Complaints & Responses</h3>

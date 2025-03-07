@@ -73,7 +73,7 @@ if(res.status==200){
           <tbody>
   {bookings.length > 0 ? (
     bookings
-      .filter((item) => item.status !== "cancelled") // Exclude cancelled bookings
+      .filter((item) => item.status !== "cancelled") 
       .map((item, index) => (
         <tr key={index}>
           <td>{index + 1}</td>

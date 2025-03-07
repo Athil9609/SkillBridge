@@ -1,20 +1,16 @@
-/* 🌟 Admin Dashboard Theme - Purple & White */
 
-/* General Container */
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 20px;
 }
 
-/* 🏆 Heading */
 h1 {
     color: #5a2d82;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-/* 📊 Stats Cards */
 .card {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -25,7 +21,6 @@ h1 {
     transform: scale(1.02);
 }
 
-/* 🟣 Purple-themed Backgrounds */
 .bg-info {
     background-color: #9b59b6 !important;
 }
@@ -38,7 +33,6 @@ h1 {
     background-color: #8e44ad !important;
 }
 
-/* 🎨 Card Text */
 .card-title {
     font-size: 1.2rem;
     font-weight: bold;
@@ -48,7 +42,6 @@ h1 {
     font-size: 1rem;
 }
 
-/* 🎥 Admin Section Buttons */
 .btn-primary {
     background-color: #5a2d82 !important;
     border: none !important;
@@ -68,7 +61,6 @@ h1 {
     box-shadow: 4px 6px 15px rgba(106, 13, 173, 0.3) !important;
 }
 
-/* 🟪 Button for Outline Style */
 .btn-outline-custom {
     color: #6a0dad !important;
     border: 2px solid #6a0dad !important;
@@ -88,7 +80,7 @@ h1 {
     transform: scale(1.05) !important;
 }
 
-/* 📱 Responsive */
+/* Responsive */
 @media (max-width: 768px) {
     .btn-primary {
         font-size: 0.9rem !important;

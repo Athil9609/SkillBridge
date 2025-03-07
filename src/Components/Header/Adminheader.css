@@ -1,17 +1,14 @@
-/* 🌟 Admin Navbar - Purple & White Theme */
 .navbar {
     background-color: #5a2d82 !important;
     padding: 15px 20px;
 }
 
-/* 🌍 Navbar Brand */
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
     color: white !important;
 }
 
-/* 📌 Navbar Links */
 .navbar-nav .nav-link {
     font-size: 1rem;
     font-weight: 600;
@@ -23,7 +20,6 @@
     color: #d1b3ff !important;
 }
 
-/* 🎭 Navbar Toggler */
 .navbar-toggler {
     border: none !important;
 }
@@ -32,7 +28,6 @@
     background-color: white !important;
 }
 
-/* 🔘 Logout Button */
 .btn-danger {
     background-color: #8e44ad !important;
     border: none !important;
@@ -48,7 +43,7 @@
     box-shadow: 4px 6px 15px rgba(106, 13, 173, 0.3);
 }
 
-/* 📱 Responsive */
+/*  Responsive */
 @media (max-width: 768px) {
     .navbar-nav .nav-link {
         font-size: 0.9rem;

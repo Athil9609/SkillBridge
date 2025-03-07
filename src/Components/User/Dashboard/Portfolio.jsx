@@ -25,9 +25,9 @@ const{editSkillResponse,setEditSkillResponse}=useContext(editSkillContext)
 
   useEffect(() => {
     if (userDetails.profile instanceof File) {
-      setPreview(URL.createObjectURL(userDetails.profile)); // Set preview for new image files
+      setPreview(URL.createObjectURL(userDetails.profile)); 
     } else {
-      setPreview(""); // Reset preview if no file
+      setPreview(""); 
     }
   }, [userDetails.profile]);
 
@@ -104,7 +104,6 @@ const{editSkillResponse,setEditSkillResponse}=useContext(editSkillContext)
   return (
     <div className="container mt-5">
       <div className="row">
-        {/* User Details Column */}
         <div className="col-12 col-md-4">
           <div className="user-details border p-4 mb-4 rounded">
             <h4 className="text-center mb-4">User Details</h4>
@@ -162,7 +161,6 @@ const{editSkillResponse,setEditSkillResponse}=useContext(editSkillContext)
           </div>
         </div>
 
-        {/* Accordion Column */}
         <div className="col-12 col-md-8">
 <div>
             <h2>Skills</h2>

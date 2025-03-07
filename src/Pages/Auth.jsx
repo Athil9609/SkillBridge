@@ -58,7 +58,7 @@ function AuthPage() {
 
     certifications.forEach((cert, index) => {
       formData.append(`certifications_skillName_${index}`, cert.skillName);
-      formData.append("certifications", cert.file); // Matches backend field name
+      formData.append("certifications", cert.file); 
     });
 
     try {
@@ -66,7 +66,7 @@ function AuthPage() {
       if (res.status === 201) {
         toast.success("Registration successful");
         setData({ userName: "", email: "", password: "", certifications: [] });
-        setIsRegister(false); // Switch to login form
+        setIsRegister(false); 
       } else {
         toast.warning(res.response.data.message);
       }

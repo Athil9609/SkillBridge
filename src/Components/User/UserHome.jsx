@@ -5,7 +5,6 @@ import ServiceBookings from './Bookings/ServiceBookings';
 const Home = () => {
   const [activeSection, setActiveSection] = useState('Dashboard');
 
-  // Function to render the current section based on the active selection
   const renderSection = () => {
     switch (activeSection) {
       case 'Dashboard':

@@ -13,7 +13,6 @@ const SkillListings = () => {
     getSkillData();
   }, []);
 
-  // Fetch skills from API
   const getSkillData = async () => {
     try {
       const response = await skillListing();
@@ -75,7 +74,6 @@ const SkillListings = () => {
         </table>
       </div>
 
-      {/* Modal for Skill Details */}
       <Modal show={showModal} onHide={() => setShowModal(false)} centered>
         <Modal.Header closeButton>
           <Modal.Title>{selectedSkill?.skillName || "Skill Details"}</Modal.Title>

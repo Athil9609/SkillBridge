@@ -16,7 +16,7 @@ function EditSkillCategory({ data }) {
 
   const handleClose = () => {
     setShow(false);
-    setCategory(data); // Reset data on close
+    setCategory(data); 
   };
 
   const handleShow = () => setShow(true);
@@ -67,7 +67,7 @@ function EditSkillCategory({ data }) {
           <Button
             variant="primary"
             onClick={handleEdit}
-            disabled={!category.categoryName.trim()} // Disable if input is empty
+            disabled={!category.categoryName.trim()} 
           >
             Update
           </Button>

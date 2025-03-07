@@ -18,7 +18,7 @@ const ManageUsers = () => {
     const getData = async () => {
         try {
             const res = await userList();
-            console.log("API Response:", res);  // Debugging
+            console.log("API Response:", res);  
             setUsers(res.data);
         } catch (error) {
             console.error("Error fetching users:", error);

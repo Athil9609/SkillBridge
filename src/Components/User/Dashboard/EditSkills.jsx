@@ -86,7 +86,6 @@ function EditSkills({ skill }) {
         </Modal.Header>
         <Modal.Body className="modal-body-custom">
           <div className="form-group">
-            {/* Category Dropdown */}
             <label htmlFor="categoryName" className="label-custom">Category</label>
             <select
               name="categoryId"
@@ -102,7 +101,6 @@ function EditSkills({ skill }) {
               ))}
             </select>
 
-            {/* Skill Name */}
             <label htmlFor="SkillName" className="label-custom">Skill</label>
             <input
               type="text"
@@ -113,7 +111,6 @@ function EditSkills({ skill }) {
               onChange={(e) => setAllSkills({ ...allSkills, skillName: e.target.value })}
             />
 
-            {/* Description */}
             <label htmlFor="Description" className="label-custom">Description</label>
             <textarea
               id="Description"
@@ -124,7 +121,6 @@ function EditSkills({ skill }) {
               onChange={(e) => setAllSkills({ ...allSkills, description: e.target.value })}
             />
 
-            {/* Expertise */}
             <label htmlFor="expertise" className="label-custom">Expertise</label>
             <select
               id="expertise"
@@ -140,7 +136,6 @@ function EditSkills({ skill }) {
               <option value="Expert">Expert</option>
             </select>
 
-            {/* Rate */}
             <label htmlFor="rate" className="label-custom">Rate (Hours)</label>
             <input
               type="number"
@@ -151,7 +146,6 @@ function EditSkills({ skill }) {
               onChange={(e) => setAllSkills({ ...allSkills, rate: e.target.value })}
             />
 
-            {/* Demo Video */}
             <label htmlFor="video" className="label-custom">Demo Video</label>
             <input
               type="file"
@@ -171,7 +165,6 @@ function EditSkills({ skill }) {
         </Modal.Footer>
       </Modal>
 
-      {/* Styled CSS */}
       <style>{`
         .btn-custom {
           background-color: #3B1E54;

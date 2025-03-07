@@ -12,7 +12,7 @@ const AdminDashboard = () => {
         <div className="col-md-4">
           <div  className="card text-white"
             style={{
-              background: "linear-gradient(135deg, #6a0dad, #a463f2)", // Gradient purple
+              background: "linear-gradient(135deg, #6a0dad, #a463f2)", 
               borderRadius: "12px",
               boxShadow: "2px 4px 10px rgba(0, 0, 0, 0.2)",
             }}>
@@ -26,7 +26,7 @@ const AdminDashboard = () => {
         <div className="col-md-4">
           <div c className="card text-white"
             style={{
-              background: "linear-gradient(135deg, #6a0dad, #a463f2)", // Gradient purple
+              background: "linear-gradient(135deg, #6a0dad, #a463f2)", 
               borderRadius: "12px",
               boxShadow: "2px 4px 10px rgba(0, 0, 0, 0.2)",
             }}>
@@ -40,7 +40,7 @@ const AdminDashboard = () => {
         <div className="col-md-4">
           <div  className="card text-white"
             style={{
-              background: "linear-gradient(135deg, #6a0dad, #a463f2)", // Gradient purple
+              background: "linear-gradient(135deg, #6a0dad, #a463f2)", 
               borderRadius: "12px",
               boxShadow: "2px 4px 10px rgba(0, 0, 0, 0.2)",
             }}>

@@ -9,11 +9,10 @@ import SkillListings from './SkillListing/SkillListing';
 const AdminHome = () => {
   const [activeSection, setActiveSection] = useState('ManageUsers');
 
-  // Function to render the current section based on the active selection
   const renderSection = () => {
     switch (activeSection) {
       case 'Dashboard':
-        return <h2>Admin Dashboard</h2>; // Replace with your actual dashboard component
+        return <h2>Admin Dashboard</h2>; 
       case 'ManageUsers':
         return <ManageUsers />;
       case 'ManageSkillCategories':

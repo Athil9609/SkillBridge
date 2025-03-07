@@ -54,7 +54,6 @@ function ManageSkillCategories() {
     }
   };
 
-  // Filter categories based on search query
   const filteredData = data.filter((category) =>
     category.categoryName.toLowerCase().includes(searchQuery.toLowerCase())
   );

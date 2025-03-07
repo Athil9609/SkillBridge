@@ -110,7 +110,6 @@ const PostSkill = () => {
 
   return (
     <div className="post-skill-form mb-4">
-      {/* Skill Name Input */}
       <div className="mb-3">
         <label htmlFor="skillName" className="form-label">
           Skill Name
@@ -128,7 +127,6 @@ const PostSkill = () => {
         />
       </div>
 
-      {/* Description Textarea */}
       <div className="mb-3">
         <label htmlFor="description" className="form-label">
           Description
@@ -146,7 +144,6 @@ const PostSkill = () => {
         />
       </div>
 
-      {/* Rate Input */}
       <div className="mb-3">
         <label htmlFor="rate" className="form-label">
           Rate (in hours)
@@ -162,7 +159,6 @@ const PostSkill = () => {
         />
       </div>
 
-      {/* Category Select Dropdown */}
       <div className="mb-3">
         <label htmlFor="category" className="form-label">
           Category
@@ -199,7 +195,6 @@ const PostSkill = () => {
         </select>
       </div>
 
-      {/* Expertise Level */}
       <div className="mb-3">
         <label htmlFor="expertise" className="form-label">
           Expertise
@@ -223,7 +218,6 @@ const PostSkill = () => {
         </select>
       </div>
 
-      {/* File Upload */}
       <div className="mb-3">
         <label htmlFor="file" className="form-label">
           Upload Demo (optional)
@@ -239,7 +233,6 @@ const PostSkill = () => {
         />
       </div>
 
-      {/* Submit Button */}
       <button onClick={handleAdd} className="btn btn-custom">
         Post Skill
       </button>

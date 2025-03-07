@@ -31,8 +31,8 @@ const Reviews = () => {
             key={index}
             className="border p-4 mb-4 rounded shadow-sm"
             style={{
-              backgroundColor: "#f4e8ff", // Light purple background
-              border: "2px solid #5a2a83", // Dark purple border
+              backgroundColor: "#f4e8ff", 
+              border: "2px solid #5a2a83", 
               borderRadius: "10px",
             }}
           >
@@ -45,7 +45,7 @@ const Reviews = () => {
               {[...Array(5)].map((_, i) => (
                 <FaStar
                   key={i}
-                  color={i < item.rating ? "#ffbf00" : "#e4e5e9"} // Gold stars for rating
+                  color={i < item.rating ? "#ffbf00" : "#e4e5e9"} 
                   size={20}
                 />
               ))}

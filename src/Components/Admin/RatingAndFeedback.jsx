@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getComplaintsAndFeedback } from '../../services/allApis';
-import './admin.css'; // Ensure this file contains styling updates
+import './admin.css'; 
 
 const RatingAndFeedback = () => {
   const [feedbacks, setFeedbacks] = useState([]);
@@ -19,7 +19,7 @@ const RatingAndFeedback = () => {
       const res = await getComplaintsAndFeedback(header, { type: "feedback" });
 
       if (res.status === 200) {
-        setFeedbacks(res.data || []); // Handle potential undefined response
+        setFeedbacks(res.data || []); 
       } else {
         console.error("Failed to fetch feedback");
       }

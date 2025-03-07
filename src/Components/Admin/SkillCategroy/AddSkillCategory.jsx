@@ -13,13 +13,13 @@ function AddSkillCategory() {
 
   const handleClose = () => {
     setShow(false);
-    setData({ categoryName: '' }); // Reset input when modal closes
+    setData({ categoryName: '' }); 
   };
 
   const handleShow = () => setShow(true);
 
   const handleAdd = async () => {
-    const trimmedCategoryName = data.categoryName.trim(); // Remove extra spaces
+    const trimmedCategoryName = data.categoryName.trim(); 
 
     if (!trimmedCategoryName) {
       toast.warning("Enter a valid category name");
@@ -71,7 +71,7 @@ function AddSkillCategory() {
           <Button
             variant="primary"
             onClick={handleAdd}
-            disabled={!data.categoryName.trim()} // Disable if input is empty
+            disabled={!data.categoryName.trim()} 
           >
             Add
           </Button>

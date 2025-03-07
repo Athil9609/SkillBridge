@@ -61,7 +61,6 @@ const Payment = () => {
         toast.error("Error processing transaction!");
       }
     } else {
-      // Show modal if balance is insufficient
       setShowModal(true);
     }
   };
@@ -109,7 +108,6 @@ const Payment = () => {
         </div>
       </div>
 
-      {/* Modal for Insufficient Balance */}
       {showModal && (
         <div className="modal fade show d-block" tabIndex="-1" role="dialog">
           <div className="modal-dialog modal-dialog-centered" role="document">

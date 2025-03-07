@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { viewAllTransactions } from "../../../services/allApis";
 
 function UserTransactions() {
-  const [allTransactions, setAllTransactions] = useState([]); // Store transactions separately
-  const [currencyBalance, setCurrencyBalance] = useState(0); // Store balance separately
+  const [allTransactions, setAllTransactions] = useState([]);
+  const [currencyBalance, setCurrencyBalance] = useState(0); 
 
   useEffect(() => {
     getData();
@@ -31,13 +31,12 @@ function UserTransactions() {
     <div className="container mt-5">
       <h3 className="text-center mb-4 text-purple">Transaction History</h3>
 
-      {/* Hours Earned Card */}
       <div className="row mb-4">
         <div className="col-md-12">
           <div
             className="card text-white"
             style={{
-              background: "linear-gradient(135deg, #6a0dad, #a463f2)", // Gradient purple
+              background: "linear-gradient(135deg, #6a0dad, #a463f2)", 
               borderRadius: "12px",
               boxShadow: "2px 4px 10px rgba(0, 0, 0, 0.2)",
             }}
@@ -52,7 +51,6 @@ function UserTransactions() {
         </div>
       </div>
 
-      {/* Transaction History Table */}
       <div className="table-responsive">
         <table className="table table-hover">
           <thead

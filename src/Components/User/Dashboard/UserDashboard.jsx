@@ -3,7 +3,7 @@ import PostSkill from "./PostSkill";
 import Portfolio from "./Portfolio";
 import Reviews from "./Reviews";
 import UserTransactions from "./UserTransactions";
-import "../user.css"; // Import the CSS file
+import "../user.css";
 
 const UserDashboard = () => {
   const [activeTab, setActiveTab] = useState("portfolio");

@@ -34,13 +34,12 @@ function UserCard({ user }) {
         </Card.Body>
       </Card>
 
-      {/* Modal for User Details */}
       <Modal show={showModal} onHide={() => setShowModal(false)} centered size="lg">
         <Modal.Header closeButton>
           <Modal.Title>{user.userName || "User Details"}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          {/* User Info */}
+          
           <div className="text-center mb-3">
             <img
               src={profileImgSrc}

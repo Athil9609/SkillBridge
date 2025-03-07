@@ -20,7 +20,7 @@ const ViewComplaints = () => {
     console.log(res)
 
     if (res.status === 200) {
-      setComplaints(res.data); // Store API response in state
+      setComplaints(res.data); 
     } else {
       console.error("Failed to fetch complaints");
     }

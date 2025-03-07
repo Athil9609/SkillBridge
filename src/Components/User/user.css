@@ -1,4 +1,3 @@
-/* 🌟 User Dashboard Styles - Improved with Purple & White Theme */
 .user-dashboard,
 .dashboard-container {
     max-width: 900px;
@@ -9,7 +8,6 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* 🔘 Tabs */
 .tabs,
 .tab-navigation {
     display: flex;
@@ -46,7 +44,6 @@
     color: white;
 }
 
-/* 📦 Content Box */
 .content-box,
 .content-area {
     background: #fbfaff;
@@ -63,7 +60,6 @@
     transform: translateY(-2px);
 }
 
-/* 🎨 User Details Card */
 .user-card {
     background: white;
     border-radius: 12px;
@@ -79,7 +75,6 @@
     height: 100px;
 }
 
-/* 🏆 Skill Item */
 .skill-item {
     background: #e9d7f9;
     padding: 15px;
@@ -129,7 +124,6 @@
         padding: 20px;
     }
 }
-/* Custom Button Style (Same as UserDashboard) */
 
 .text-purple {
     color: #6a0dad !important;
