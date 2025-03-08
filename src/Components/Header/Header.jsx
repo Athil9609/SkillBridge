@@ -9,13 +9,10 @@ function Header() {
     return (
         <Navbar expand="lg" className="navbar">
             <Container className="container">
-                {/* Navbar Brand */}
                 <Navbar.Brand href="#home" className="logo">SkillBridge</Navbar.Brand>
 
-                {/* Toggler Button */}
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className='toggle-icon' />
 
-                {/* Navbar Links */}
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mx-auto nav">
                         <Nav.Link className='nav-link' href="#home">Home</Nav.Link>
@@ -25,7 +22,6 @@ function Header() {
                         <Nav.Link className='nav-link' href="#about">About</Nav.Link>
                     </Nav>
 
-                    {/* Join Now Button */}
                     <Link to={'/auth'} className="cta">Join Now</Link>
                 </Navbar.Collapse>
             </Container>
