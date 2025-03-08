@@ -1,0 +1,175 @@
+/* 🔵 Main Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 🟣 User Details Section */
+.user-details {
+    background: #fdfdff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+/* 🟡 Profile Image */
+.user-details img {
+    border: 3px solid #5a2d82;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.user-details img:hover {
+    transform: scale(1.05);
+}
+
+/* 📌 Input Fields */
+.user-details input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 🟢 Buttons */
+.btn-custom {
+    background-color: #5a2d82;
+    color: white;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: #462061;
+    transform: scale(1.05);
+}
+
+/* 🔴 Skill Buttons Layout */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Provides spacing */
+    margin-top: 10px;
+}
+
+/* 🟠 Individual Buttons */
+.button-container .btn {
+    flex: 1;
+    min-width: 100px;
+    padding: 10px 12px;
+    text-align: center;
+}
+
+/* 🔵 Watch Demo Button */
+.watch-demo {
+    flex-grow: 2;
+    max-width: 150px;
+    padding: 12px 16px;
+    background: #5a2d82;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watch-demo:hover {
+    background-color: #462061;
+    transform: scale(1.05);
+}
+
+/* 🟣 Skills Accordion */
+.accordion-item {
+    border: none;
+    background-color: #f8f8ff;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* 📜 Accordion Header */
+.accordion-header {
+    background-color: #c8a2d9;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* 🟢 Accordion Body */
+.accordion-body {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* 📱 Responsive - Mobile View */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .user-details {
+        padding: 15px;
+    }
+
+    .user-details img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .button-container .btn {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .btn-custom {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+/* 🔹 Ensure Buttons Stack Correctly on Smaller Screens */
+@media (max-width: 480px) {
+    .button-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button-container .btn,
+    .watch-demo {
+        width: 100%; /* Full width to prevent overlap */
+    }
+}
+
+/* 🟢 Grid Layout for Desktop */
+@media (min-width: 992px) {
+    .user-details {
+        text-align: left;
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}

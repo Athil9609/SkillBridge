@@ -13,13 +13,10 @@ function Rating({ item }) {
   const [review, setReview] = useState('');
 
   const skills = item?.Skill;
-
-  const { addSkillRatingResponse, setAddSkillRatingResponse } =
-    useContext(addSkillRatingContext);
+  const { setAddSkillRatingResponse } = useContext(addSkillRatingContext);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
   const handleRatingClick = (index) => setRating(index + 1);
 
   const handleSubmit = async () => {
@@ -36,11 +33,8 @@ function Rating({ item }) {
     };
 
     const res = await addRatingAndFeedback(reviewData, header);
-    console.log(res);
     setAddSkillRatingResponse(res);
-    console.log('Review Submitted:', reviewData);
 
-    // Reset fields after submission
     setSelectedService('');
     setRating(0);
     setReview('');
@@ -59,7 +53,6 @@ function Rating({ item }) {
         </Modal.Header>
         <Modal.Body className="content-box">
           <Form>
-            {/* Service Dropdown */}
             <Form.Group className="mb-3">
               <Form.Label className="text-purple">Select Service</Form.Label>
               <Form.Select
@@ -76,7 +69,6 @@ function Rating({ item }) {
               </Form.Select>
             </Form.Group>
 
-            {/* Rating Bar */}
             <Form.Group className="mb-3">
               <Form.Label className="text-purple">Rate the Service</Form.Label>
               <div className="star-rating">
@@ -84,14 +76,14 @@ function Rating({ item }) {
                   <FaStar
                     key={index}
                     size={30}
-                    className={`star ${index < rating ? 'active' : ''}`}
+                    className="star"
                     onClick={() => handleRatingClick(index)}
+                    color={index < rating ? "#FFD700" : "#C0C0C0"}
                   />
                 ))}
               </div>
             </Form.Group>
 
-            {/* Review Input */}
             <Form.Group className="mb-3">
               <Form.Label className="text-purple">Your Review</Form.Label>
               <Form.Control

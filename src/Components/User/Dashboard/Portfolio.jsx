@@ -6,8 +6,7 @@ import { deleteMySkill, updateUserDetails, userDetailsApi, viewMySkill } from ".
 import baseUrl from "../../../services/baseUrl";
 import EditSkills from './EditSkills';
 import { toast } from "react-toastify";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import './portfolio.css'
 import { editSkillContext } from "../../../Context/ContextApi";
 
 const Portfolio = () => {

@@ -150,7 +150,7 @@ const UserDetailsWithToggle = () => {
                             {review.reviewerId === sessionStorage.getItem("userId") && (
                               <div>
                                 <EditRating item={userData} item2={review} />
-                                <button onClick={() => deleteRating(review.id)} className="btn-delete">
+                                <button onClick={() => deleteRating(review.id)} className="btn-primary  ms-2">
                                   <i className="fa-solid fa-trash" />
                                 </button>
                               </div>
